@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: ql3tnqtrq-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ql3tnqtrq-python 
+  name: ql3tnqtrq-python
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: ql3tnqtrq-python 
